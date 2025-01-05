@@ -17,6 +17,7 @@ public class SwaggerConfig {
     public OpenAPI openAPI() {
         String oauth2SchemeName = "OAuth2";
 
+        //jwt를 위한 스웨거 테스트 코드임
         OAuthFlow authorizationCodeFlow = new OAuthFlow()
                 .authorizationUrl("http://localhost:8080/oauth2/authorization/google")
                 .tokenUrl("http://localhost:8080/api/token");
